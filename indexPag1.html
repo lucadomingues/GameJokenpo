@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: url(fundo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        img{
+            width: 800px;
+            height: 400px;
+        }
+
+        #inicial{
+            margin: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+            color: rgb(43, 43, 43);
+        }
+    </style>
+</head>
+<body>
+    <div id="inicial">
+        <a href="indexPag2.html" id="linkPag2"><img src="telaInicial.png" alt=""></a>
+        <p>APERTE "ENTER" PARA INICIAR O JOGO</p>
+    </div>
+
+    <script>
+        document.addEventListener('keypress', function(e){
+        if(e.which == 13){
+            console.log("ENTER PRESSIONADO");
+            window.location.href = "indexPag2.html"
+        }
+        }, false);
+    </script>
+</body>
+</html>
